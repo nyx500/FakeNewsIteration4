@@ -421,13 +421,13 @@ with st.container():
 
             # Read in the image using matplotlib.pyplot.imread functionality
             real_cloud_img = plt.imread("combined_four_set_training_data_real_news_named_entities_wordcloud.png")
-            st.image(real_cloud_img, caption="Most frequent entities exclusive to real news", width=wordcloud_width)
+            st.image(real_cloud_img, caption="Most frequent entities exclusive to real news", use_container_width=True)
         
         # The left column displays entities only in fake news
         with col2:
             st.subheader("Named Entities Appearing ONLY in Fake News and NOT in Real News")
             fake_cloud_img = plt.imread("combined_four_set_training_data_fake_news_named_entities_wordcloud.png")
-            st.image(fake_cloud_img, caption="Most frequent entities exclusive to fake news", width=wordcloud_width)
+            st.image(fake_cloud_img, caption="Most frequent entities exclusive to fake news", use_container_width=True)
 
         st.markdown("<br>", unsafe_allow_html=True) 
         # Adds an explanation for how the word clouds use sizes and colors
