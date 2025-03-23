@@ -303,7 +303,7 @@ with st.container():
             st.subheader("Capital Letter Usage")
             st.markdown('<div class="image-in-center">', unsafe_allow_html=True)
             caps_img = plt.imread("all_four_datasets_capitals_bar_chart_real_vs_fake.png")
-            st.image(caps_img, caption="Mean number of capital letters in real vs fake news", width=img_width)
+            st.image(caps_img, caption="Mean number of capital letters in real vs fake news", use_container_width=True)
             st.markdown('</div>', unsafe_allow_html=True)
             st.write("Real news tended to use more capital letters, perhaps due to including more proper nouns and technical acronyms.")
 
@@ -312,7 +312,7 @@ with st.container():
             # Exclamation Point Usage
             st.subheader("Exclamation Point Usage")
             exclaim_img = plt.imread("all_four_datasets_exclamation_points_bar_chart_real_vs_fake.png")
-            st.image(exclaim_img, caption="Frequency of exclamation points in real vs fake news", width=img_width)
+            st.image(exclaim_img, caption="Frequency of exclamation points in real vs fake news", use_container_width=True)
             st.write("Fake news tends to use more exclamation points, possibly suggesting a more sensational and inflammatory writing.")
 
             st.markdown("<br>", unsafe_allow_html=True) 
@@ -320,7 +320,7 @@ with st.container():
             # Third-Person Pronoun Usage
             st.subheader("Third Person Pronoun Usage")
             pronouns_img = plt.imread("all_four_datasets_third_person_pronouns_bar_chart_real_vs_fake.png")
-            st.image(pronouns_img, caption="Frequency of third-person pronouns in real vs fake news", width=img_width)
+            st.image(pronouns_img, caption="Frequency of third-person pronouns in real vs fake news", use_container_width=True)
             st.write("Fake news often uses more third-person pronouns (e.g him, his, her), which could indciate a more 'storytelling' kind of narrative style.")
 
             st.markdown("<br>", unsafe_allow_html=True) 
@@ -328,7 +328,7 @@ with st.container():
             # Noun-to-Verb Ratio
             st.subheader("Noun-to-Verb Ratio")
             emotions_img = plt.imread("all_four_datasets_noun_to_verb_ratio_bar_chart_real_vs_fake.png")
-            st.image(emotions_img, caption="Noun-to-Verb Ratio: Real vs Fake News", width=img_width)
+            st.image(emotions_img, caption="Noun-to-Verb Ratio: Real vs Fake News", use_container_width=True)
             st.write("In the training data, real news tended to have slightly more nouns than verbs than fake news.")
 
             st.markdown("<br>", unsafe_allow_html=True) 
@@ -336,7 +336,7 @@ with st.container():
             # Emotion counts
             st.subheader("Emotional Content using NRC Emotion Lexicon")
             emotions_img = plt.imread("all_four_datasets_emotions_bar_chart_real_vs_fake.png")
-            st.image(emotions_img, caption="Emotional content comparison between real and fake news", width=img_width)
+            st.image(emotions_img, caption="Emotional content comparison between real and fake news", use_container_width=True)
             st.write("Fake news (in this dataset) often showed lower positive emotion scores and fewer trust-based emotion words than real news.")
 
             st.markdown("<br>", unsafe_allow_html=True) 
@@ -344,7 +344,7 @@ with st.container():
             # Named Entity PERSON counts
             st.subheader("Named Entity PERSON Frequency Counts")
             emotions_img = plt.imread("all_four_datasets_person_named_entities_bar_chart_real_vs_fake.png")
-            st.image(emotions_img, caption="PERSON named entity count for fake vs real news", width=img_width)
+            st.image(emotions_img, caption="PERSON named entity count for fake vs real news", use_container_width=True)
             st.write("Fake news (in this dataset) often contained more references to PERSON named entities than real news.")
 
             st.markdown("<br>", unsafe_allow_html=True) 
@@ -352,7 +352,7 @@ with st.container():
             # Named Entity CARDINAL counts
             st.subheader("Named Entity CARDINAL (i.e. numbers) Frequency Counts")
             emotions_img = plt.imread("all_four_datasets_cardinal_named_entities_bar_chart_real_vs_fake.png")
-            st.image(emotions_img, caption="CARDINAL (numbers) named entity count for fake vs real news", width=img_width)
+            st.image(emotions_img, caption="CARDINAL (numbers) named entity count for fake vs real news", use_container_width=True)
             st.write("Fake news tended to contain less numerical data (i.e. lower CARDINAL named entity frequencies) than real news.")
 
             st.markdown("<br>", unsafe_allow_html=True) 
@@ -360,7 +360,7 @@ with st.container():
             # Flesch-Kincaid Readability Grade
             st.subheader("Flesch-Kincaid U.S. Readability Grade Level")
             emotions_img = plt.imread("all_four_datasets_flesch_kincaid_readability_bar_chart_real_vs_fake.png")
-            st.image(emotions_img, caption="Flesch-Kincaid avg. U.S. grade level (readability) for fake vs real news", width=img_width)
+            st.image(emotions_img, caption="Flesch-Kincaid avg. U.S. grade level (readability) for fake vs real news", use_container_width=True)
             st.write("Real news tended to have a slightly higher U.S. grade level, indicating more complex language, than fake news.")
 
             st.markdown("<br>", unsafe_allow_html=True) 
@@ -368,7 +368,7 @@ with st.container():
             # Difficult Words
             st.subheader("Difficult Words Score")
             emotions_img = plt.imread("all_four_datasets_difficult_words_score_bar_chart_real_vs_fake.png")
-            st.image(emotions_img, caption="Normalized 'Difficult Words' scores for fake vs real news", width=img_width)
+            st.image(emotions_img, caption="Normalized 'Difficult Words' scores for fake vs real news", use_container_width=True)
             st.write("Real news tended to contain more complex words than fake news.")
 
             st.markdown("<br>", unsafe_allow_html=True) 
