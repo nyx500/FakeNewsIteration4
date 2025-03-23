@@ -293,11 +293,9 @@ with st.container():
             st.write("")
 
         with col2:
+            
             # Adds a space between the bar charts
             st.markdown("<br>", unsafe_allow_html=True) 
-
-            # Sets the width of the bar charts
-            img_width = 800
             
             # Capital Letter Usage
             st.subheader("Capital Letter Usage")
@@ -411,8 +409,6 @@ with st.container():
         st.markdown("<br>", unsafe_allow_html=True) 
 
         col1, col2 = st.columns([1, 1])
-
-        wordcloud_width = 850
 
         # The left column displays entities only in real news
         with col1:
